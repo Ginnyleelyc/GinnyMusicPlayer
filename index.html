@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MusicPlayer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.css">
+
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="main bg-dark">
+      <div class="row h-100 m-0">
+        <div class="col-lg-5 p-0">
+          <div class="artist-panel">
+            <div class="artist-info mb-5 w-100 pl-3">
+              <div class="name">
+                <p class="text-sm">ARTIST</p>
+                <p class="singer-name">Ariana Grande</p>
+              </div>
+              <div class="follower mt-3 ">
+                <div class="d-flex flex-column flex-md-row">
+                  <div class="num mr-5">500,000<br>Followers</div>
+                  <div class="follower-btns mt-3 mt-md-0">
+                    <button class="btn btn-sm btn-outline-light mr-3 ">FOLLOWING</button>
+                    <button class="btn btn-sm btn-danger play ">PLAY</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 p-0">
+          <div class="album d-flex flex-column flex-sm-row">
+            <div class="album-pic mr-3 mr-sm-5 align-self-center">
+              <img src="img/arianaAlbumPic.jpeg">
+            </div>
+            <div class="album-info mt-3 mt-sm-0">
+              <div class="years">2014(練習用，非商業/營利網站)</div>
+              <div class="album-name">My Everything(Deluxe)</div>
+              <div class="d-flex justify-content-center justify-content-sm-between align-items-center mt-3">
+                <button class="btn btn-danger btn-sm play mr-3 mr-sm-0">PLAY</button>
+                <div class="heart"><i class="far fa-heart"></i></div>
+              </div>
+    
+            </div>
+          </div>
+          <div class="music-list">
+            <table class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col" width="15%"></th>
+                  <th scope="col">TITLE</th>
+                  <th scope="col" width="15%" class="text-center">LENGTH</th>
+                  <th scope="col" width="15%" class="text-center"><i class="fas fa-heart"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-active">
+                  <th scope="row" class="text-center">1</th>
+                  <td class="song-title">Intro</td>
+                  <td class="text-center">1:20</td>
+                  <td class="text-center heart"><i class="far fa-heart"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center">2</th>
+                  <td class="song-title">Problem (Ft. Iggy Azalea)</td>
+                  <td class="text-center">3:13</td>
+                  <td class="text-center heart"><i class="far fa-heart"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center">3</th>
+                  <td class="song-title">One Last Time</td>
+                  <td class="text-center">3:18</td>
+                  <td class="text-center heart"><i class="far fa-heart"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center">4</th>
+                  <td class="song-title">Why Try</td>
+                  <td class="text-center">3:31</td>
+                  <td class="text-center heart"><i class="far fa-heart"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center">5</th>
+                  <td class="song-title">Break Free (Ft. Zedd)</td>
+                  <td class="text-center">3:35</td>
+                  <td class="text-center heart"><i class="far fa-heart"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center">6</th>
+                  <td class="song-title">Best Mistake (featuring Big Sean)</td>
+                  <td class="text-center">3:53</td>
+                  <td class="text-center heart"><i class="far fa-heart"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center">7</th>
+                  <td class="song-title">Be My Baby (featuring Cashmere Cat)</td>
+                  <td class="text-center">3:36</td>
+                  <td class="text-center heart"><i class="far fa-heart"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center">8</th>
+                  <td class="song-title">Break Your Heart Right Back (featuring Childish Gambino)</td>
+                  <td class="text-center">4:13</td>
+                  <td class="text-center heart"><i class="far fa-heart"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center">9</th>
+                  <td class="song-title">Love Me Harder (with The Weeknd)</td>
+                  <td class="text-center">3:56</td>
+                  <td class="text-center heart"><i class="far fa-heart"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center">10</th>
+                  <td class="song-title">Just a Little Bit of Your Heart</td>
+                  <td class="text-center">3:52</td>
+                  <td class="text-center heart"><i class="far fa-heart"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center">11</th>
+                  <td class="song-title">Hands On Me (featuring A$AP Ferg)</td>
+                  <td class="text-center">3:12</td>
+                  <td class="text-center heart"><i class="far fa-heart"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-center">12</th>
+                  <td class="song-title">My Everything</td>
+                  <td class="text-center">2:48</td>
+                  <td class="text-center heart"><i class="far fa-heart"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="control-panel">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar"></div>
+      </div>
+      <div class="d-flex justify-content-between mt-2 mx-4 font-weight-light">
+        <span class="startTime">0:00</span>
+        <span class="restTime">-0:00</span>
+      </div>
+      <div class="pb-2 px-2 px-sm-3 px-lg-5 mx-lg-4 d-flex justify-content-between align-items-center">
+        <div class="d-sm-flex align-items-center mw-320 d-none">
+          <div class="album-pic mr-3">
+            <img src="img/arianaAlbumPic.jpeg">
+          </div>
+          <div class="song-info">
+            <div class="song-name">Intro</div>
+            <div class="singer text-sm">Ariana Grande</div>
+          </div>
+        </div>
+        <div class="control-btn d-sm-flex d-none align-items-center justify-content-center mr-lg-2">
+          <div class="shuffle mr-2 mr-lg-4"><img src="img/ic_shuffle_24px.svg"></div>
+          <div class="preSong"><i class="fas fa-fast-backward"></i></div>
+          <div class="playSong mx-2 mx-lg-4"><i class="fas fa-play"></i></div>
+          <div class="nextSong"><i class="fas fa-fast-forward"></i></div>
+          <div class="repeat ml-2 ml-lg-4"><img src="img/ic_repeat_24px.svg"></div>
+        </div>
+        <div class="d-sm-flex d-none justify-content-around ">
+          <div class="volume d-none d-lg-flex align-items-center mr-lg-5">
+            <span class="mr-2"><i class="fas fa-volume-up"></i></span>
+            <div class="volumeBar">
+              <div class="volumeBar-active"></div>
+            </div>
+          </div>
+          <div class="heart"><i class="far fa-heart"></i></div>
+        </div>
+        <div class="mobPlaySong d-block d-sm-none mr-1"><i class="fas fa-play"></i></div>
+        <div class="song-info d-block d-sm-none text-center">
+          <div class="song-name">Intro</div>
+          <div class="mobSinger">Ariana Grande</div>
+        </div>
+        <div class="heart d-block d-sm-none ml-1"><i class="far fa-heart"></i></div>
+      </div>
+    </div>
+    <div class="user-panel d-flex justify-content-between">
+      <div class="top">
+        <div class="profile mb-md-5"><img src="img/user.jpg" class="rounded-circle"></div>
+        <div class="home mb-md-5"><img src="img/home-52.svg"></div>
+        <div class="library mb-md-5"><img src="img/ic_library_music_48px.svg"></div>
+        <div class="browse"><img src="img/archive-2.svg"></div>
+      </div>
+      <div class="bottom">
+        <div class="search mb-md-4"><img src="img/zoom-2.svg"></div>
+        <div class="setting"><img src="img/settings-gear-63.svg"></div>
+      </div>
+    </div>
+  </div>
+    
+  
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+  <script src="js/all.js"></script>
+</body>
+
+</html>

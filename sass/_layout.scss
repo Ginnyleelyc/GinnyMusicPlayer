@@ -1,0 +1,279 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    letter-spacing: 1px;
+    //min-width: 100vh;
+}
+.wrap{
+    overflow-x:hidden
+}
+.btn{
+    font-weight: 700;
+    font-size: 14px;
+    width: 128px;
+    border-radius: 50rem;
+}
+.user-panel{
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    padding: 50px 10px;
+    text-align: center;
+    background-color: #4b3434;
+    .top > div, .bottom > div{
+        cursor: pointer;
+    }
+    .profile{
+        img{
+            width: 56px;
+            height: 56px;
+        }
+    }
+    @media (max-width: 768px) { 
+        flex-direction: row;
+        padding: 10px;
+        bottom: unset;
+        left: 0;
+        height: 70px;
+        background-color: rgba(75, 52, 52, 0.7);
+        img{
+            width: 25px;
+            height: 25px;
+        }
+        .top, .bottom{
+            display: flex;
+            align-items: center;
+            & >div{
+                padding: 0 20px;
+                margin-bottom: 0 !important;
+            }
+        }
+     }
+     @media (max-width: 576px){
+        .top > div , .bottom > div{
+            padding: 0 10px;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+        }
+     }
+}
+.main{
+    // min-height: 90vh;
+    margin-right: 75px;
+    // min-width: 100vh;
+    @media (max-width: 768px) { 
+        margin-right: 0;
+     }
+    .artist-panel{
+        display: flex;
+        justify-content: center;
+        background: -webkit-linear-gradient(top, rgba(255,255,255,0.1), rgba(0, 0, 0, 0.8)), url(../img/artistPic.jpeg);
+        min-height: 90vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .artist-info{
+            align-self: flex-end;
+            .name{
+                .text-sm{
+                    color: #E5B4B7;
+                    font-size: 14px;
+                }
+                .singer-name{
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 33px;
+                }
+            }
+            .follower{
+                .num{
+                    font-size: 11px;
+                    font-weight: 300;
+                    line-height: 16px;
+                }
+                .btn-outline-light{
+                    color:#964A4D;
+
+                }
+            }
+        }
+        &:after{
+            content: "";
+            background: rgba(0,0,0,0.5);
+        }
+    }
+    .album{
+        margin-top: 80px;
+        padding: 0 20px;
+        @media (max-width: 576px){
+            padding: 0 5px;
+            text-align: center;
+        }
+        .album-pic{
+            min-width: 90px;
+            max-width: 90px;
+            height: auto;
+        }
+        .album-info{
+            width: 60%;
+            @media (max-width: 768px){
+                width: 100%;
+            }
+            .years{
+                font-size: 12px;
+                color: #707070;
+            }
+            .album-name{
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 45px;
+                white-space: nowrap;
+            }
+        }
+    }
+    .music-list{
+        margin-top: 80px;
+        max-height: 500px;
+        overflow: scroll;
+        @media (max-width: 992px) { 
+            margin-bottom: 100px;
+        }
+        table{
+            font-size: 14px;
+            line-height: 30px;
+            @media (max-width: 576px){
+                &.table td, &.table th{
+                    padding: .5rem 0;
+                }
+            }       
+        }
+        table thead th{
+            color: #964A4D;
+        }
+        .heart{
+            cursor: pointer;
+            font-size: 16px;
+        }
+    }
+}
+.control-panel{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 76px;
+    background: linear-gradient(#772020,#361024);
+    @media (max-width: 768px) { 
+        right: 0;
+     }
+    .progress{
+        height: 13px;
+        border-radius: 0;
+        
+    }
+    .progress-bar{
+        background-color: #E5B4B7;
+        cursor: pointer;
+        transition: width .1s ease;
+    }
+    .album-pic{
+        min-width: 40px;
+        max-width: 40px;
+        height: 40px;
+    }
+    .song-info{
+            white-space: nowrap;
+        .song-name{
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 28px;
+        }
+        .singer, .mobSinger{
+            font-size: 10px;
+            font-weight: 300;
+            letter-spacing: 0;
+        }
+    }
+    .control-btn{
+        & > div{
+            cursor: pointer;
+        }
+        .preSong, .nextSong{
+            font-size: 20px;
+        }
+        .repeat, .shuffle{
+            padding: 5px 10px;
+        }
+    }
+    .playSong, .mobPlaySong{
+        font-size: 20px;
+        border: 2px solid;
+        padding: 12px;
+        border-radius: 50%;
+        @media (max-width: 576px) { 
+            padding: 6px;
+            font-size: 10px;
+            border: 1px solid
+        }
+    }
+    
+    .volumeBar{
+        background-color: #fff;
+        border-radius: 30px;
+        cursor: pointer;
+        height: 5px;
+        width: 100px;
+        .volumeBar-active{
+            position: relative;
+            background-color: #e5b4b7;
+            height: 5px;
+            width: 0;
+            &::after{
+                content: "";
+                display: inline-block;
+                position: absolute;
+                right: -8px;
+                top: -4px;
+                width: 12px;
+                height: 12px;
+                background: white;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+.heart{
+    cursor: pointer;
+    font-size: 20px;
+    @media (max-width: 576px) { 
+        font-size: 16px;
+    }
+}
+.table-active{
+    th{
+        position: relative;
+        &:before{
+            position: absolute;
+            left: 10px;
+            content: "\f001";
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            font-size: 20px;
+            color: #964A4D;
+            @media (max-width: 576px) { 
+                content: none;
+            }
+        }
+    }
+    
+}
+.clickActive{
+    border-radius: 20%;
+    background-color: #964A4D;
+}
+.mw-320{
+    min-width: 320px;
+}
